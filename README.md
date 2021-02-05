@@ -4,7 +4,7 @@ A Tic-Tac-Toe game written with PySimpleGUI.
 
 ## Dependencies:
 
-Pillow and PySimpleGUI
+Pillow and PySimpleGUI are required!
 
 You can do the following to install:
 
