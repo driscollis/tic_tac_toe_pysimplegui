@@ -1,5 +1,7 @@
 import PySimpleGUI as sg
 
+BLANK_IMAGE_PATH = "assets/BLANK.png"
+
 
 def main():
     layout = [
@@ -8,7 +10,7 @@ def main():
                 size=(10, 6),
                 key=(row, col),
                 button_color=("white", "white"),
-                image_filename="BLANK.png",
+                image_filename=BLANK_IMAGE_PATH,
             )
             for row in range(3)
         ]
