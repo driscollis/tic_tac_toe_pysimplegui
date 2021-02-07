@@ -19,10 +19,12 @@ def ask_if_play_again(player):
         message = f"{player} won!"
     layout = [
         [sg.Text(f"{message} Do you want to play again or Quit?")],
-        [sg.Button("Restart", key="restart"), sg.Button("Quit", key="quit")],
+        [sg.Button("Restart", key="-RESTART-"), sg.Button("Quit", key="-QUIT-")],
     ]
-    event, values = sg.Window("Play Again?", layout, modal=True).read(close=True)
-    return True if event == "restart" else False
+    event, values = sg.Window("Play Again?", layout, modal=True).read(
+        close=True
+    )
+    return True if event == "-RESTART-" else False
 
 
 def check_if_won(winning_configurations):
